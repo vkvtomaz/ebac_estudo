@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validador</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h2>Comparador de Valores</h2>
+    <p class="subtitle">Insira dois valores para comparar.</p>
+
+    <form id="form-numeros">
+      <div class="input-group">
+        <label for="campo-a">Campo A:</label>
+        <input 
+          type="number" 
+          id="campo-a" 
+          name="campoA" 
+          step="any" 
+          placeholder="Digite um número" 
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="campo-b">Campo B:</label>
+        <input 
+          type="number" 
+          id="campo-b" 
+          name="campoB" 
+          step="any" 
+          placeholder="Digite um número" 
+          required
+        >
+      </div>
+
+      <button type="submit" id="btn-submit">Submeter</button>
+
+      <!-- Mensagens de feedback -->
+      <div id="mensagem" class="mensagem"></div>
+    </form>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
